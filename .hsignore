@@ -1,0 +1,4 @@
+*.scss
+*.map
+/website/assets/src/**
+/website/assets/build/css/style.css.map

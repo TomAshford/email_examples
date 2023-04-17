@@ -1,0 +1,8 @@
+node_modules
+**/.DS_Store
+hubspot.config.yml
+*.css.map
+/assets/build/css/*.css
+/assets/build/js/*.js
+website/assets/build/css/style.css
+website/assets/build/css/style-template-pack.css

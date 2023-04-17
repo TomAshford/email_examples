@@ -1,0 +1,11 @@
+[ {
+  "id" : "28e55586-a660-baf0-8759-f734afe308cc",
+  "name" : "add_line",
+  "display_width" : null,
+  "label" : "Add line",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

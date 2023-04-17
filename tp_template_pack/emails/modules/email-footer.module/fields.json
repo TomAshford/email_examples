@@ -1,0 +1,100 @@
+[ {
+  "id" : "1a7c3461-b0f5-74a7-ca3d-4e82d8829f18",
+  "name" : "bg_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ACC6BF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e4852798-76d5-4eb6-3834-5194d1e98acc",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Stay updated"
+}, {
+  "id" : "6610f525-ec41-b7f7-8427-a7df13757adc",
+  "name" : "linkedin_url",
+  "display_width" : null,
+  "label" : "Linkedin URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.linkedin.com/company/ticketco",
+    "content_id" : null
+  }
+}, {
+  "id" : "9c516b8c-33cc-dca2-ad56-2c431e7ff21b",
+  "name" : "twitter_url",
+  "display_width" : null,
+  "label" : "Twitter URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://twitter.com/TicketCoUK",
+    "content_id" : null
+  }
+}, {
+  "id" : "9c516b8c-33dd-dca2-ad56-2c431e7ff21b",
+  "name" : "youtube_url",
+  "display_width" : null,
+  "label" : "Youtube URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.youtube.com/channel/UCj2ARsZNQIC31Lpa9u3xkrg",
+    "content_id" : null
+  }
+}, {
+  "id" : "e5552798-76d5-4eb6-3834-5194d1e98acc",
+  "name" : "en_footer",
+  "display_width" : null,
+  "label" : "EN Footer Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "You received this email because you are subscribed to updates from {{ site_settings.company_name }}.<br>To opt out, <a href=\"{{ unsubscribe_link }}\" target=\"_blank\" style=\"color:#202436;\">update your email preferences</a> or <a href=\"{{ unsubscribe_link_all }}\" target=\"_blank\" style=\"color:#202436;\">unsubscribe</a>"
+}, {
+  "id" : "e5552799-76d5-4eb6-3834-5194d1e98acc",
+  "name" : "no_footer",
+  "display_width" : null,
+  "label" : "NO Footer Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "You received this email because you are subscribed to updates from {{ site_settings.company_name }}.<br>To opt out, <a href=\"{{ unsubscribe_link }}\" target=\"_blank\" style=\"color:#202436;\">update your email preferences</a> or <a href=\"{{ unsubscribe_link_all }}\" target=\"_blank\" style=\"color:#202436;\">unsubscribe</a>"
+}, {
+  "id" : "e5552398-76d5-4eb6-3834-5194d1e98acc",
+  "name" : "sv_footer",
+  "display_width" : null,
+  "label" : "SV Footer Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "You received this email because you are subscribed to updates from {{ site_settings.company_name }}.<br>To opt out, <a href=\"{{ unsubscribe_link }}\" target=\"_blank\" style=\"color:#202436;\">update your email preferences</a> or <a href=\"{{ unsubscribe_link_all }}\" target=\"_blank\" style=\"color:#202436;\">unsubscribe</a>"
+}, {
+  "id" : "e5552798-76d2-4eb6-3834-5194d1e98acc",
+  "name" : "nl_footer",
+  "display_width" : null,
+  "label" : "NL Footer Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "You received this email because you are subscribed to updates from {{ site_settings.company_name }}.<br>To opt out, <a href=\"{{ unsubscribe_link }}\" target=\"_blank\" style=\"color:#202436;\">update your email preferences</a> or <a href=\"{{ unsubscribe_link_all }}\" target=\"_blank\" style=\"color:#202436;\">unsubscribe</a>"
+} ]

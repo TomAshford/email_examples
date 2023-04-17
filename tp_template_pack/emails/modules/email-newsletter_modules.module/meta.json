@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 75795072131,
+  "label" : "email_newsletter_modules",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,1723 @@
+[ {
+  "id" : "19687fef-23fa-0b91-e3fa-b14343452c25",
+  "name" : "individual_module",
+  "display_width" : null,
+  "label" : "individual_module",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "00581ae6-107e-c812-a295-dfb46121b074",
+    "name" : "module_type",
+    "display_width" : null,
+    "label" : "module_type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "hero_section", "Hero Section" ], [ "text_box", "Text Box" ], [ "large_card", "Large Card" ], [ "two_cards", "Article cards" ] ],
+    "type" : "choice",
+    "default" : "text_box"
+  }, {
+    "id" : "39ddadf1-c704-59df-9388-ba68a07efaff",
+    "name" : "hero_section",
+    "display_width" : null,
+    "label" : "hero_section",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "hero_section",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "1393db68-e40a-753e-5f53-8bddeb622138",
+      "name" : "logo",
+      "display_width" : null,
+      "label" : "Logo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      }
+    }, {
+      "id" : "2687bffe-daf3-d792-4ad5-c61194c26dba",
+      "name" : "logo_link",
+      "display_width" : null,
+      "label" : "Logo Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cegal.com/",
+        "content_id" : null
+      }
+    }, {
+      "id" : "f7d7e9c3-f06f-8738-0237-1de29d3aeec0",
+      "name" : "content_link",
+      "display_width" : null,
+      "label" : "Content Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://cegal.com/",
+        "content_id" : null
+      }
+    }, {
+      "id" : "84b6d620-15f2-cfd9-f33d-180d824b6954",
+      "name" : "background_image",
+      "display_width" : null,
+      "label" : "Background Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      }
+    }, {
+      "id" : "dc625a63-0638-f393-0824-1353ebc43687",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>"
+    }, {
+      "id" : "976446ed-0587-1e49-a49f-d0ce40073790",
+      "name" : "cta_bg_color",
+      "display_width" : null,
+      "label" : "cta_bg_color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "35b7fc31-3ddb-7dcf-b452-1a6d85c79651",
+      "name" : "cta_colortext1",
+      "display_width" : null,
+      "label" : "cta_colortext1",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "589e2e10-8e56-5fc2-7f46-ae4563345483",
+      "name" : "content_url",
+      "display_width" : null,
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "https://start.ticketco.events/uk/"
+    }, {
+      "id" : "b9559c9b-b6b4-a3f8-7b49-3f2237719925",
+      "name" : "cta_text1",
+      "display_width" : null,
+      "label" : "cta_text1",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "View season tickets"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    }
+  }, {
+    "id" : "3680ba40-8461-5751-0175-adc24297d5d9",
+    "name" : "text_box",
+    "display_width" : null,
+    "label" : "Text Box",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "text_box",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "a023a2ca-3c9f-ed78-2b93-97f9444999b4",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Hello {{ contact.firstname }}!"
+    }, {
+      "id" : "59115d5f-a1a3-bf03-b8a8-d20e72413990",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>"
+    }, {
+      "id" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+      "name" : "use_cta_button",
+      "display_width" : null,
+      "label" : "Use CTA button",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "cf2a53e6-c414-07fc-c8da-2d154241ac9c",
+      "name" : "cta_button",
+      "display_width" : null,
+      "label" : "CTA Button",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "cta",
+      "default" : "5742c3a8-2ccc-4067-931c-afac80af03cd"
+    }, {
+      "id" : "976446ed-0587-1e49-a19f-d0ce40073790",
+      "name" : "cta_bg_color",
+      "display_width" : null,
+      "label" : "cta_bg_color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "35b7fc31-3ddb-7dcf-b552-1a6d85c79651",
+      "name" : "cta_colortext1",
+      "display_width" : null,
+      "label" : "cta_colortext1",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "589e2e10-8e56-5fc2-7f66-ae4563345483",
+      "name" : "content_url",
+      "display_width" : null,
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "https://start.ticketco.events/uk/"
+    }, {
+      "id" : "b9559c9b-b6b4-a3f8-7b39-3f2237719925",
+      "name" : "cta_text1",
+      "display_width" : null,
+      "label" : "cta_text1",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "a51d2f61-4590-55b5-aa71-45564cee4df7",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "richtext",
+      "default" : "View season tickets"
+    }, {
+      "id" : "c395c9d6-256a-43dc-ecaa-1ef3ff7d8526",
+      "name" : "add_author",
+      "display_width" : null,
+      "label" : "Add signature",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "589e2e11-8e56-5fc2-7f66-ae4563345483",
+      "name" : "author_name",
+      "display_width" : null,
+      "label" : "Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "c395c9d6-256a-43dc-ecaa-1ef3ff7d8526",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Mandeep"
+    }, {
+      "id" : "589e2e22-8e56-5fc2-7f66-ae4563345483",
+      "name" : "author_info",
+      "display_width" : null,
+      "label" : "Info",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "c395c9d6-256a-43dc-ecaa-1ef3ff7d8526",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Senior designer, Birmingham"
+    }, {
+      "id" : "5a34421e-9eee-4d6f-77af-4da7903e25cb",
+      "name" : "author_image",
+      "display_width" : null,
+      "label" : "Author Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Hello {{ contact.firstname }}!",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    }
+  }, {
+    "id" : "7ec64e0c-27f7-6edf-f22f-cd77935bd1d2",
+    "name" : "two_cards",
+    "display_width" : null,
+    "label" : "Article cards",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "two_cards",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "28e44586-a000-baf0-8759-f734afe308cc",
+      "name" : "add_spacer_above_cards",
+      "display_width" : null,
+      "label" : "Add spacer above cards",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "086785ad-6fad-af5f-099f-492ed861e066",
+      "name" : "header_text",
+      "display_width" : null,
+      "label" : "Header Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "All new for you"
+    }, {
+      "id" : "10f4e94d-24c9-4eb6-7110-c69d15ac9bd7",
+      "name" : "card",
+      "display_width" : null,
+      "label" : "Card",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "sorting_label_field" : "e243ad79-b7d7-39be-fe0b-fcf2339f9163",
+        "default" : 3
+      },
+      "children" : [ {
+        "id" : "1ee232d3-60fa-128f-a025-280ecabecfd6",
+        "name" : "content_tag_colour",
+        "display_width" : null,
+        "label" : "Content Tag Colour",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#00CC99",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "086766ad-6fad-af5f-099f-492ed861e066",
+        "name" : "content_tag_text",
+        "display_width" : null,
+        "label" : "Content Tag Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Article"
+      }, {
+        "id" : "38f66a53-f6f0-5883-f106-5982c25a5d1a",
+        "name" : "image",
+        "display_width" : null,
+        "label" : "Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : false,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/oxford-rising-stars.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        }
+      }, {
+        "id" : "02ee7ae7-cd16-c42f-b559-43eb41294868",
+        "name" : "tag",
+        "display_width" : null,
+        "label" : "Tag",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Article"
+      }, {
+        "id" : "e243ad79-b7d7-39be-fe0b-fcf2339f9163",
+        "name" : "title",
+        "display_width" : null,
+        "label" : "Title",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "Oxford Rising Stars 2022/23 Season TicketOxford Rising Stars 2022/23 Season Ticket"
+      }, {
+        "id" : "aa3cd60c-3d0a-b54a-1eb3-29ac78eaad35",
+        "name" : "content_url",
+        "display_width" : null,
+        "label" : "Content URL",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "https://start.ticketco.events/uk/"
+      }, {
+        "id" : "5d0a575c-cde9-4b5a-624e-7d07cf7c9c12",
+        "name" : "cta_text",
+        "display_width" : null,
+        "label" : "CTA Text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Read more"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : true,
+      "type" : "group",
+      "default" : [ {
+        "content_tag_text" : "Article",
+        "image" : {
+          "src" : "https://4468513.fs1.hubspotusercontent-na1.net/hubfs/4468513/tp_template_pack/emails/carbon-credits.jpg",
+          "alt" : "carbon-credits",
+          "loading" : "lazy",
+          "width" : 462,
+          "height" : 326
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season TicketOxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "content_tag_text" : "Article",
+        "image" : {
+          "src" : "https://4468513.fs1.hubspotusercontent-na1.net/hubfs/4468513/tp_template_pack/emails/carbon-credits.jpg",
+          "alt" : "carbon-credits",
+          "loading" : "lazy",
+          "width" : 462,
+          "height" : 326
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season TicketOxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "content_tag_text" : "Article",
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/oxford-rising-stars.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ]
+    }, {
+      "id" : "976448ed-0587-1e49-a49f-d0ce40073790",
+      "name" : "cta_bg_color",
+      "display_width" : null,
+      "label" : "cta_bg_color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "35b7fc31-8ddb-7dcf-b452-1a6d85c79651",
+      "name" : "cta_colortext1",
+      "display_width" : null,
+      "label" : "cta_colortext1",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "589e2e10-8e86-5fc2-7f46-ae4563345483",
+      "name" : "content_url",
+      "display_width" : null,
+      "label" : "View more button URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "https://start.ticketco.events/uk/"
+    }, {
+      "id" : "b9559c9b-b6b8-a3f8-7b49-3f2237719925",
+      "name" : "cta_text1",
+      "display_width" : null,
+      "label" : "cta_text1",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "View all"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "add_spacer_above_cards" : true,
+      "card" : [ {
+        "content_tag_text" : "Article",
+        "image" : {
+          "src" : "https://4468513.fs1.hubspotusercontent-na1.net/hubfs/4468513/tp_template_pack/emails/carbon-credits.jpg",
+          "alt" : "carbon-credits",
+          "loading" : "lazy",
+          "width" : 462,
+          "height" : 326
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season TicketOxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "content_tag_text" : "Article",
+        "image" : {
+          "src" : "https://4468513.fs1.hubspotusercontent-na1.net/hubfs/4468513/tp_template_pack/emails/carbon-credits.jpg",
+          "alt" : "carbon-credits",
+          "loading" : "lazy",
+          "width" : 462,
+          "height" : 326
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season TicketOxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  }, {
+    "id" : "18ab6838-ceab-6177-5cbd-0c111e88ebb8",
+    "name" : "large_cta",
+    "display_width" : null,
+    "label" : "Large card",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "large_card",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "name" : "bg_color",
+      "label" : "Background Colour",
+      "required" : false,
+      "locked" : false,
+      "multiple":"false",
+      "display" : "select",
+      "choices" : [ [ "green", "Light Green" ], [ "dark", "Dark Blue" ], [ "white", "White" ] ],
+      "type" : "choice",
+      "default" : "green"
+    }, {
+      "id" : "5a34031e-9eff-4d6f-19af-4da7903e25cb",
+      "name" : "image",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 866,
+        "height" : 372
+      }
+    }, {
+      "id" : "c7d71827-f007-0d5f-9141-1ef15623a6c7",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Discover our latest case study"
+    }, {
+      "id" : "689b8e18-b155-5112-1cf3-9e1b55d79015",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>"
+    }, {
+      "id" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+      "name" : "use_cta_button",
+      "display_width" : null,
+      "label" : "Use CTA button",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "20f97ad6-64bf-cc3e-2428-c59184efd719",
+      "name" : "cta_button",
+      "display_width" : null,
+      "label" : "CTA Button",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "cta",
+      "default" : "5742c3a8-2ccc-4067-931c-afac80af03cd"
+    }, {
+      "id" : "b92fd91d-2eab-9b42-ac6e-3c1b5fe2e785",
+      "name" : "content_url",
+      "display_width" : null,
+      "label" : "Content URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "https://start.ticketco.events/uk/"
+    }, {
+      "id" : "e3c60266-e79b-276e-115a-7945043f1b67",
+      "name" : "cta_text1",
+      "display_width" : null,
+      "label" : "cta_text1",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "richtext",
+      "default" : "Read more"
+    }, {
+      "id" : "5a34031e-9eff-4d6f-14af-4da7903e25cb",
+      "name" : "content_tag_icon",
+      "display_width" : null,
+      "label" : "Content Tag Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    }, {
+      "id" : "e3c60266-e86b-276e-115a-7945043f1b67",
+      "name" : "content_tag_text",
+      "display_width" : null,
+      "label" : "Content Tag text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Latest news"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 866,
+        "height" : 372
+      },
+      "title" : "Discover our latest case study",
+      "text" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "Latest news",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group",
+  "default" : [ {
+    "module_type" : "hero_section",
+    "hero_section" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "",
+      "cta_text1" : "View season tickets"
+    },
+    "text_box" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Hello {{ contact.firstname }}!",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "large_cta" : {
+      "bg_color" : "green",
+      "add_spacer_above_card" : false,
+      "image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 866,
+        "height" : 372
+      },
+      "title" : "Discover our latest case study",
+      "text" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "Latest news",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    },
+    "two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  }, {
+    "module_type" : "text_box",
+    "hero_section" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "text_box" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "",
+      "cta_text1" : "View season tickets"
+    },
+    "large_cta" : {
+      "bg_color" : "green",
+      "add_spacer_above_card" : false,
+      "image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 866,
+        "height" : 372
+      },
+      "title" : "Discover our latest case study",
+      "text" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "Latest news",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    },
+    "two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }"two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  }, {
+    "module_type" : "two_cards",
+    "hero_section" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "text_box" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Hello {{ contact.firstname }}!",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "large_cta" : {
+      "bg_color" : "green",
+      "add_spacer_above_card" : false,
+      "image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 866,
+        "height" : 372
+      },
+      "title" : "Discover our latest case study",
+      "text" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "Latest news",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    },
+    "two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  }, {
+    "module_type" : "large_card",
+    "hero_section" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "text_box" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Hello {{ contact.firstname }}!",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "large_cta" : {
+      "bg_color" : "green",
+      "add_spacer_above_card" : false,
+      "image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/large-card-image.jpg",
+        "alt" : "white-paper",
+        "loading" : "lazy",
+        "width" : 506,
+        "height" : 259
+      },
+      "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+      "text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "Latest news",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    },
+    "two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  }, {
+    "module_type" : "large_card",
+    "hero_section" : {
+      "logo" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/logo-email-white.png",
+        "alt" : "TicketCo",
+        "loading" : "lazy",
+        "width" : 74,
+        "height" : 100
+      },
+      "logo_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "content_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://start.ticketco.events/uk/",
+        "content_id" : null
+      },
+      "background_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/newsletter-email-bg.jpg",
+        "alt" : "promo-bg",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 440
+      },
+      "title" : "<p>Curabitur vel tortor tempus, laoreet nibh vel, laoreet elit!</p>",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "text_box" : {
+      "add_author" : false,
+      "author_name" : "Mandeep",
+      "author_info" : "Senior designer, Birmingham",
+      "author_image" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/tc-author-placeholder.png",
+        "alt" : "speaker-image",
+        "loading" : "lazy",
+        "width" : 84,
+        "height" : 84
+      },
+      "title" : "Hello {{ contact.firstname }}!",
+      "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi a nulla scelerisque hendrerit sed et turpis. Fusce viverra a sapien ac placerat. Maecenas nec ornare augue. Morbi nec massa luctus, ultrices turpis eget, condimentum massa.</p>\n<p>Fusce nec purus nulla. Donec id purus mauris. Donec ultricies lorem lorem. Vivamus pellentesque mi dolor, eu eleifend sapien sollicitudin eget. Sed vitae massa commodo, molestie lorem sit amet, bibendum magna. Etiam in tortor non arcu egestas commodo eu eu lectus. Vestibulum eget tempus arcu.&nbsp;</p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View season tickets"
+    },
+    "large_cta" : {
+      "bg_color" : "dark",
+      "add_spacer_above_card" : false,
+      "image" : {
+        "src" : "",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 506,
+        "height" : 259
+      },
+      "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+      "text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>",
+      "use_cta_button" : false,
+      "cta_button" : "5742c3a8-2ccc-4067-931c-afac80af03cd",
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "Read more",
+      "content_tag_text" : "",
+      "content_tag_icon" : {
+        "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/news-icon.png",
+        "alt" : "eguide-email-placeholder",
+        "loading" : "lazy",
+        "width" : 73,
+        "height" : 59
+      }
+    },
+    "two_cards" : {
+      "add_spacer_above_cards" : true,
+      "header_text" : "All new for you",
+      "card" : [ {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/sports-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Sports",
+        "title" : "Oxford Rising Stars 2022/23 Season Ticket",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/music-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Concert",
+        "title" : "Elton John – The O2 Arena",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      }, {
+        "image" : {
+          "src" : "https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/family-email-card.jpg",
+          "alt" : "article-placeholder",
+          "loading" : "lazy",
+          "width" : 253,
+          "height" : 237
+        },
+        "tag" : "Family",
+        "title" : "Junkyard Golf Club Manchester",
+        "content_url" : "https://start.ticketco.events/uk/",
+        "cta_text" : "Read more",
+        "content_tag_colour" : {
+          "color" : "#51716D",
+          "opacity" : 100
+        }
+      } ],
+      "cta_bg_color" : {
+        "color" : "#DDAF54",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "content_url" : "https://start.ticketco.events/uk/",
+      "cta_text1" : "View all"
+    }
+  } ]
+} ]

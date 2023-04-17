@@ -1,0 +1,201 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--[if gte mso 9]>
+      <xml>
+          <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+      </xml>
+      <style>
+        ul > li {
+          text-indent: -1em;
+        }
+      </style>
+    <![endif]-->
+    <!--[if mso]>
+    <style type="text/css">
+     body, td {font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    <![endif]-->
+    <!--[if !((mso)|(IE))]><!-- -->
+    <style type="text/css">
+      .moz-text-html .hse-column-container{max-width:600px !important;width:600px !important}
+      .moz-text-html .hse-column{display:table-cell;vertical-align:top}
+      .moz-text-html .hse-section .hse-size-2{max-width:120px !important;width:120px !important}
+      .moz-text-html .hse-section .hse-size-3{max-width:176px !important;width:176px !important}
+      .moz-text-html .hse-section .hse-size-4{max-width:200px !important;width:200px !important}
+      .moz-text-html .hse-section .hse-size-5{max-width:253px !important;width:253px !important}
+      .moz-text-html .hse-section .hse-size-6{max-width:300px !important;width:300px !important}
+      .moz-text-html .hse-section .hse-size-7{max-width:330px !important;width:330px !important}
+      .moz-text-html .hse-section .hse-size-8{max-width:400px !important;width:400px !important}
+      .moz-text-html .hse-section .hse-size-9{max-width:450px !important;width:450px !important}
+      .moz-text-html .hse-section .hse-size-11{max-width:506px !important;width:506px !important}
+      .moz-text-html .hse-section .hse-size-12{max-width:600px !important;width:600px !important}
+      [owa] .hse-column-container{max-width:600px !important;width:600px !important}
+      [owa] .hse-column{display:table-cell;vertical-align:top}
+      [owa] .hse-section .hse-size-2{max-width:120px !important;width:120px !important}
+      [owa] .hse-section .hse-size-3{max-width:176px !important;width:176px !important}
+      [owa] .hse-section .hse-size-4{max-width:200px !important;width:200px !important}
+      [owa] .hse-section .hse-size-5{max-width:253px !important;width:253px !important}
+      [owa] .hse-section .hse-size-6{max-width:300px !important;width:300px !important}
+      [owa] .hse-section .hse-size-7{max-width:330px !important;width:330px !important}
+      [owa] .hse-section .hse-size-8{max-width:400px !important;width:400px !important}
+      [owa] .hse-section .hse-size-9{max-width:450px !important;width:450px !important}
+      [owa] .hse-section .hse-size-11{max-width:506px !important;width:506px !important}
+      [owa] .hse-section .hse-size-12{max-width:600px !important;width:600px !important}
+      @media only screen and (min-width:640px){
+        .hse-column-container{max-width:600px !important;width:600px !important}
+        .hse-column{display:table-cell;vertical-align:top}
+        .hse-section .hse-size-2{max-width:120px !important;width:120px !important}
+        .hse-section .hse-size-3{max-width:176px !important;width:176px !important}
+        .hse-section .hse-size-4{max-width:200px !important;width:200px !important}
+        .hse-section .hse-size-5{max-width:253px !important;width:253px !important}
+        .hse-section .hse-size-6{max-width:300px !important;width:300px !important}
+        .hse-section .hse-size-7{max-width:330px !important;width:330px !important}
+        .hse-section .hse-size-8{max-width:400px !important;width:400px !important}
+        .hse-section .hse-size-9{max-width:450px !important;width:450px !important}
+        .hse-section .hse-size-11{max-width:506px !important;width:506px !important}
+        .hse-section .hse-size-12{max-width:600px !important;width:600px !important}
+      }
+      @media only screen and (max-width:639px){
+        img.stretch-on-mobile,.hs_rss_email_entries_table img,.hs-stretch-cta .hs-cta-img{height:auto !important;width:100% !important}
+        .display_block_on_small_screens{display:block}
+        .hse-section .hse-size-3{max-width:100% !important;width:100% !important}
+        .hse-section .hse-size-5{max-width:100% !important;width:100% !important}
+        ul,blockquote{margin:0;padding:1em 40px}
+      }
+    </style><!--<![endif]-->
+    <style type="text/css">
+      body[data-outlook-cycle] img.stretch-on-mobile,body[data-outlook-cycle] .hs_rss_email_entries_table img{height:auto !important;width:100% !important}
+      body[data-outlook-cycle] .hs_padded{padding-left:20px !important;padding-right:20px !important}
+      a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important}
+      #outlook a{padding:0}
+      .yshortcuts a{border-bottom:none !important}
+      a{text-decoration:underline}
+      .ExternalClass{width:100%}
+      .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{line-height:100%}
+      p{margin:0}
+      .textbox p {
+        margin-bottom:25px;
+      }
+      .textbox li {
+        margin-bottom:25px;
+      }
+      body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;moz-osx-font-smoothing:grayscale}
+      @media only screen and (max-width:639px){
+        img.stretch-on-mobile,.hs_rss_email_entries_table img,.hs-stretch-cta .hs-cta-img{height:auto !important;width:100% !important}
+      }
+      @media screen and (max-width:599px) {
+        .text_top { height:0px!important; }
+        .main_table_top { height:0px!important; }
+        .em_padded { padding: 0px 12px 0px 12px!important; }
+        .em_wrapper { width:100%!important; }
+        .em_aside16 { padding: 0px 16px 0px 16px!important; }
+        .em_aside26 { padding: 0px 26px 0px 26px!important; }
+        .em_side26 { width:26px!important; }
+        .em_font22 {font-size:22px!important;line-height:28px!important;}
+        .em_aside12 { padding: 0px 12px 0px 12px!important; }
+        .em_card_button { font-size:12px!important;}
+        .em_font26 {font-size:26px!important;line-height:35px!important;}
+      }
+    </style>
+    <style type="text/css" id="hs-inline-css">
+      /*<![CDATA[*/
+      /* everything in this style tag will be inlined onto matching elements */
+      h1 { font-size:34px; line-height:40px;margin:0 0 12px;Margin:0 0 12px; }
+      h2 { font-size:45px; line-height:52px;margin:0 0 25px;Margin:0 0 25px;color:#202436; }
+      h3 { font-size:20px; line-height:27px;margin:0 0 17px;Margin:0 0 17px; }
+      .textbox p {
+        margin-bottom:25px;
+      }
+      .textbox p:last-child {
+        margin-bottom:0;
+      }
+      .textbox a {
+        color:#DDAF54;
+      }
+      .textbox li {
+        margin-bottom:25px;
+      }
+      /*]]>*/
+    </style>
+  </head>
+  <body bgcolor="#FAFAFA" style="margin:0 !important; padding:0 !important; font-family:'Work Sans', Arial, sans-serif; font-size:16px; color:#2c3645; word-break:break-word">
+    
+    <!--[if gte mso 9]>
+    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+        <v:fill type="tile" size="100%,100%" color="#ffffff"/>
+    </v:background>
+    <![endif]-->
+    <!-- Preview text (text which appears right after subject in certain email clients) -->
+    <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
+    <!-- Insert body here -->
+    <div class="hse-body-background" style="background-color:#FAFAFA" bgcolor="#FAFAFA">
+      <table role="presentation" class="hse-body-wrapper-table" cellpadding="0" cellspacing="0" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin:0; padding:0; width:100% !important; min-width:320px !important; height:100% !important" width="100%" height="100%">
+        <tbody><tr>
+          <td class="hse-body-wrapper-td" valign="top" style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:16px; color:#2c3645; word-break:break-word;">
+            <div id="hs_cos_wrapper_main" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_dnd_area" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="dnd_area">
+              <div id="section-0" class="hse-section hse-section-first">
+              <!--[if !((mso)|(IE))]><!-- -->
+                <div class="hse-column-container" style="min-width:280px; max-width:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:collapse; border-spacing:0; background-color:#ffffff" bgcolor="#ffffff">
+              <!--<![endif]-->
+    
+              <!--[if (mso)|(IE)]>
+                <div class="hse-column-container" style="min-width:280px;max-width:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:collapse;border-spacing:0;">
+                <table align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:600px;" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#ffffff">
+                <tr style="background-color:#ffffff;">
+              <![endif]-->
+
+              <!--[if (mso)|(IE)]>
+                <td valign="top" style="width:600px;">
+              <![endif]-->
+                  
+              <!--[if gte mso 9]>
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:600px">
+              <![endif]-->
+                  <div id="column-0-0" class="hse-column hse-size-12">
+                  {% module "module_16546778345756" path='/tp_template_pack/emails/modules/email-header', label="email-header" %}
+                  {% module "module_16546803251247" path='/tp_template_pack/emails/modules/email-plain_modules', label="email-plain_modules" %}
+                  {% module "module_165461786763714" path="/tp_template_pack/emails/modules/email-footer", label="email-footer" %}
+                  </div>
+              <!--[if gte mso 9]></table><![endif]-->
+                  
+              <!--[if (mso)|(IE)]></td><![endif]-->
+                  
+              <!--[if (mso)|(IE)]></tr></table><![endif]-->
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr></tbody>
+      </table>
+    </div>
+    
+    <div style="display:none;opacity:1;font-size:0;line-height:0;mso-hide:all;">
+    <!-- Office location information and unsubscribe links -->
+      {{ site_settings.company_name }}&nbsp;
+      {{ site_settings.company_street_address_1 }}&nbsp;
+      {{ site_settings.company_street_address_2 }}&nbsp;
+      {{ site_settings.company_city }}&nbsp;
+      {{ site_settings.company_state }}&nbsp;
+      {{ site_settings.company_zip }}&nbsp;
+      {{ site_settings.company_country }}&nbsp;
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,177 @@
+[ {
+  "allow_new_line": false,
+  "default": "Follow us",
+  "display_width": null,
+  "id": "e1cebb5a-0998-02a6-8e01-0934c42f455b",
+  "label": "Share text",
+  "locked": false,
+  "name": "share_text",
+  "required": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "validation_regex": ""
+ },
+ {
+  "display_width": null,
+  "expanded": false,
+  "id": "b79c7da6-fe7e-e0d8-4b40-1b65fa9cb173",
+  "label": "Social icon",
+  "locked": false,
+  "name": "social_icon",
+  "occurrence": {
+   "default": 2,
+   "max": 4,
+   "min": 1,
+   "sorting_label_field": "0271faf8-f18c-0d84-1fe5-e2d3a514a084"
+  },
+  "children": [
+    {
+     "allow_new_line": false,
+     "default": "https://www.linkedin.com/company/semine",
+     "display_width": null,
+     "id": "2945b5ba-2002-6920-bb7c-fd822aad89aa",
+     "label": "Link",
+     "locked": false,
+     "name": "in_link",
+     "placeholder": "",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "default": {
+      "src": "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/LinkedIn.png",
+      "alt": "linkedin-in",
+      "loading": "lazy",
+      "width": 20,
+      "height": 20
+     },
+     "display_width": null,
+     "id": "0271faf8-f18c-0d84-1fe5-e2d3a514a084",
+     "label": "icon_in",
+     "locked": false,
+     "name": "icon_in",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    }
+   ],
+   "default": [
+    {
+     "in_link": "https://www.linkedin.com/company/semine",
+     "icon_in": {
+      "src": "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/LinkedIn.png",
+      "alt": "linkedin-in",
+      "loading": "lazy",
+      "width": 22,
+      "height": 22
+     }
+    }
+   ],
+  "required": false,
+  "tab": "CONTENT",
+  "type": "group"
+ }, {
+  "id" : "d2da4ebc-7517-2ab4-6fb9-bb7ecaff3d0f",
+  "name" : "add_tag",
+  "display_width" : null,
+  "label" : "Add Tag",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "e74c41b4-e8ab-246c-ed9f-58ffa9eb4872",
+  "name" : "tag_text",
+  "display_width" : null,
+  "label" : "Tag Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "d2da4ebc-7517-2ab4-6fb9-bb7ecaff3d0f",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "eGuide"
+}, {
+  "name" : "tag_color",
+  "label" : "Tag background color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "d2da4ebc-7517-2ab4-6fb9-bb7ecaff3d0f",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+     "color" : "#FFE775",
+     "opacity" : 100
+  }
+}, {
+  "id" : "213e6337-0418-9b43-fde8-734c73b177b2",
+  "name" : "hero_text",
+  "display_width" : null,
+  "label" : "Hero text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Lorem ipsum dolor sit amet con sectetur sadipscing</h1>"
+}, {
+  "id" : "8edd5c03-b9bc-377c-1418-b2d5333bf73a",
+  "name" : "content_link",
+  "display_width" : null,
+  "label" : "Content Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.semine.com/",
+    "content_id" : null
+  }
+}, {
+  "id" : "cbd7abe4-4b93-46ed-e0b5-656eda5ec251",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/email-image-placeholder.png",
+    "alt" : "email-hero-image",
+    "width" : 400,
+    "height" : 300
+  }
+}, {
+  "name" : "image_max",
+  "label" : "Image max width",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 50,
+  "max" : 600,
+  "step" : 1,
+  "type" : "number",
+  "prefix": "",
+  "suffix" : "",
+  "default" : 400,
+  "placeholder": "50"
+} ]

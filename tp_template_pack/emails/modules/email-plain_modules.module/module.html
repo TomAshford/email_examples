@@ -1,0 +1,355 @@
+{% for item in module.individual_module %}
+<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:100%; table-layout:fixed;">
+<!-- //text -->
+{% if item.module_type == "title" %}
+<tr>
+  <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;">
+    <!--[if mso]>
+     <center>
+     <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+    <![endif]-->
+    <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+      <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+        <tr>
+          <td valign="top" align="center" style="padding:0 47px;" class="em_aside26"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+            <tbody>
+              <tr>
+                <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+              </tr>
+              {% if item.title.text_field %}
+              <tr>
+                <tr>
+                  <!--[if mso]>
+                  <td valign="top" align="left" style="text-transform:uppercase;font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #DDAF54; font-weight:700;" class="textbox">
+                  <![endif]-->
+                  <!--[if !mso]><!-- -->
+                  <td valign="top" align="left" style="text-transform:uppercase;font-family: 'Lexend', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #DDAF54; font-weight:700;" class="textbox">
+                    <!--<![endif]-->
+                  {{ item.title.text_field }}
+                </td>
+              </tr>
+              <tr>
+                <td height="6" style="height: 6px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+              </tr>
+              {% endif %}
+              <tr>
+                <tr>
+                  <!--[if mso]>
+                  <td valign="top" align="left" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;" class="textbox">
+                  <![endif]-->
+                  <!--[if !mso]><!-- -->
+                  <td valign="top" align="left" style="font-family: 'Lexend', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;" class="textbox">
+                    <!--<![endif]-->
+                  {{ item.title.richtext_field }}
+                </td>
+              </tr>
+              {% if not loop.last %}
+              <tr>
+                <td height="30" style="height: 30px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table></td>
+        </tr>
+      </table>
+    </div>
+    <!--[if mso]>
+     </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+     </center>
+    <![endif]-->
+  </td>
+</tr>
+{% endif %}
+  <!-- //text -->
+  {% if item.module_type == "text" %}
+  <tr>
+    <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;">
+      <!--[if mso]>
+       <center>
+       <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+      <![endif]-->
+      <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+          <tr>
+            <td valign="top" align="center" style="padding:0 47px;" class="em_aside26"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+              <tbody>
+                {% if loop.first %}
+                <tr>
+                  <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+                {% endif %}
+                {% if item.text.add_space_top %}
+                <tr>
+                  <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+                {% endif %}
+                <tr>
+                  <tr>
+                    <!--[if mso]>
+                    <td valign="top" align="left" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;" class="textbox">
+                    <![endif]-->
+                    <!--[if !mso]><!-- -->
+                    <td valign="top" align="left" style="font-family: 'Work Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;" class="textbox">
+                      <!--<![endif]-->
+                    {{ item.text.richtext_field }}
+                  </td>
+                </tr>
+              </tbody>
+            </table></td>
+          </tr>
+        </table>
+      </div>
+      <!--[if mso]>
+       </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+       </center>
+      <![endif]-->
+    </td>
+  </tr>
+  {% endif %}
+  <!-- //button -->
+  {% if item.module_type == "button" %}
+  <tr>
+    <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;">
+      <!--[if mso]>
+       <center>
+       <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+      <![endif]-->
+      <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+          <tr>
+            <td valign="top" align="center" style="padding:0 47px;" class="em_aside26"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+              <tbody>
+                {% if item.button.add_space_top %}
+                <tr>
+                  <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td height="12" style="height: 12px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+                {% endif %}
+              {% if item.button.use_cta_button or item.button.content_url %}
+                {% if item.button.use_cta_button %}
+                <tr>
+                  <td valign="middle" align="left">
+                  {% cta guid="{{ item.button.cta_button }}" %}
+                  </td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td>
+                    <table role="presentation" cellpadding="0" cellspacing="0" align="left" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                      <tr>
+                        <!--[if mso]>
+                        <td>
+                          <table border="0" width="100%" cellspacing="0" cellpadding="0" align="{{ item.button.align }}"><tr><td>
+                          <table border="0" width="100%" cellspacing="0" cellpadding="0" align="{{ item.button.align }}"><tr><td style="color:#fff;font-size:0;">&nbsp;</td>
+                        <td valign="middle" align="{{ item.button.align }}" width="220" height="47" style="width:220px;text-align:center;height: 47px; font-family: Arial, sans-serif; font-size: 14px; color: {{ item.button.cta_colortext1.color }}; padding: 0px 26px;font-weight:700;background-color:{{ item.button.cta_color1.color }};" class="em_defaultlink">
+                          <a href="{{ item.button.content_url }}" target="_blank" style="text-transform:uppercase;padding: 0 26px;display: inline-block;text-decoration: none; color: {{ item.button.cta_colortext1.color }}; line-height: 47px;">
+                        <![endif]-->
+                        <!--[if !mso]><!-- -->
+                        <td valign="middle" align="{{ item.button.align }}" height="47" style="text-align:{{ item.button.align }};height: 47px; font-family: 'Work Sans', Arial, sans-serif; font-size: 16px; color: {{ item.button.cta_colortext1.color }};font-weight:700;" class="em_defaultlink">
+                          <a href="{{ item.button.content_url }}" target="_blank" style="text-transform:uppercase;padding: 0 26px;display: inline-block;text-decoration: none; color: {{ item.button.cta_colortext1.color }}; line-height: 47px;background-color:{{ item.button.cta_color1.color }};border-radius: 10px;">
+                          <!--<![endif]-->
+                          {{ item.button.cta_text1 }}</a>
+                        </td>
+                        <!--[if mso]>
+                        <td style="color:#fff;font-size:0;">&nbsp;</td>
+                        </tr></table>
+                        </td></tr></table>
+                        </td>
+                        <![endif]-->
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                {% endif %}
+                {% if not loop.last %}
+                <tr>
+                  <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                </tr>
+                {% endif %}
+              {% endif %}
+              </tbody>
+            </table></td>
+          </tr>
+        </table>
+      </div>
+      <!--[if mso]>
+       </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+       </center>
+      <![endif]-->
+    </td>
+  </tr>
+  {% endif %}
+  <!-- //text -->
+  {% if item.module_type == "image" %}
+  <tr>
+    <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;">
+      <!--[if mso]>
+       <center>
+       <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+      <![endif]-->
+      <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+          <tr>
+            <td valign="top" align="center">
+              {% if item.image.url.href %}<a href="{{ item.image.url.href }}" target="_blank" style="display:block;">{% endif %}
+                <img src="{{ item.image.image.src }}" alt="{{ item.image.image.alt }}" width="600" style="display:block;border:0;margin:0; width: 100%; max-width: 600px;"/>
+              {% if item.image.url.href %}</a>{% endif %}
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if mso]>
+       </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+       </center>
+      <![endif]-->
+    </td>
+  </tr>
+  {% endif %}
+  <!-- //text -->
+  {% if item.module_type == "author" %}
+  <tr>
+    <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;">
+      <!--[if mso]>
+       <center>
+       <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+      <![endif]-->
+      <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+          <tr>
+            <td valign="top" align="center" style="padding:0 47px;" class="em_aside26"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="hse-section">
+                      <!--[if !((mso)|(IE))]><!-- -->
+                      <div class="hse-column-container" style="
+                          min-width: 240px;
+                          max-width: 506px;
+                          width: 100%!important;
+                          margin-left: auto;
+                          margin-right: auto;
+                          border-collapse: collapse;
+                          border-spacing: 0;">
+                        <!--<![endif]-->
+
+                        <!--[if (mso)|(IE)]>
+                          <div class="hse-column-container" style="min-width:240px;max-width:506px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:collapse;border-spacing:0;">
+                          <table align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:506px;" cellpadding="0" cellspacing="0" role="presentation" width="506">
+                          <tr>
+                        <![endif]-->
+
+                        <!--[if (mso)|(IE)]>
+                      <td valign="top" style="width:120px;">
+                      <![endif]-->
+                          <!--[if gte mso 9]>
+                        <table role="presentation" width="120" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:120px">
+                      <![endif]-->
+                      <div class="hse-column hse-size-2">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="
+                            border-spacing: 0 !important;
+                            border-collapse: collapse;
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                          ">
+                          <tbody>
+                            <tr>
+                              <td class="hs_padded" style="
+                                  border-collapse: collapse;
+                                  mso-line-height-rule: exactly;
+                                  word-break: break-word;">
+                                  <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td valign="top" align="left">
+                                            <img src="{{ item.author.author_image.src }}?noresize" alt="Author" {{ sizeAttrs }} width="84" border="0" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 25px; color: #ffffff; max-width: 100%; width:84px; display: block;border-radius:50%;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--[if gte mso 9]></table><![endif]-->
+                      <!--[if (mso)|(IE)]></td><![endif]-->
+
+                        <!--[if (mso)|(IE)]>
+                          <td valign="top" style="width:330px;">
+                        <![endif]-->
+                            <!--[if gte mso 9]>
+                          <table role="presentation" width="330" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:330px">
+                        <![endif]-->
+                        <div class="hse-column hse-size-7">
+                          <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="
+                              border-spacing: 0 !important;
+                              border-collapse: collapse;
+                              mso-table-lspace: 0pt;
+                              mso-table-rspace: 0pt;
+                            ">
+                            <tbody>
+                              <tr>
+                                <td class="hs_padded" style="
+                                    border-collapse: collapse;
+                                    mso-line-height-rule: exactly;
+                                    word-break: break-word;">
+                                    <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td height="16" style="height:16px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                          <!--[if mso]>
+                                          <td valign="top" align="left" style="font-family: Arial, sans-serif; font-size: 18px; line-height: 24px; color: #202436; font-weight:700;">
+                                          <![endif]-->
+                                          <!--[if !mso]><!-- -->
+                                          <td valign="top" align="left" style="font-family: 'Work Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; color: #202436; font-weight:700;" class="textbox">
+                                            <!--<![endif]-->
+                                            {{ item.author.author_name }}</td>
+                                        </tr>
+                                        <tr>
+                                          <!--[if mso]>
+                                          <td valign="top" align="left" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;">
+                                          <![endif]-->
+                                          <!--[if !mso]><!-- -->
+                                          <td valign="top" align="left" style="font-family: 'Work Sans', Arial, sans-serif; font-size: 16px; line-height: 24px; color: #424142;" class="textbox">
+                                            <!--<![endif]-->
+                                            {{ item.author.author_info }}</td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if gte mso 9]></table><![endif]-->
+                        <!--[if (mso)|(IE)]></td><![endif]-->
+                                    
+                        <!--[if (mso)|(IE)]></tr></table><![endif]-->
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table></td>
+          </tr>
+        </table>
+      </div>
+      <!--[if mso]>
+      </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+      </center>
+      <![endif]-->
+    </td>
+  </tr>
+  {% endif %}
+</table>
+{% endfor %}
+<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+  <tr>
+    <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+  </tr>
+</table>

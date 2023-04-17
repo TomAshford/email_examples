@@ -1,0 +1,560 @@
+[ {
+  "id" : "19687fef-23fa-0b91-e3fa-b14343452c25",
+  "name" : "individual_module",
+  "display_width" : null,
+  "label" : "individual_module",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "00581ae6-107e-c812-a295-dfb46121b074",
+    "name" : "module_type",
+    "display_width" : null,
+    "label" : "module_type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "text", "Text" ],[ "button", "Button" ], [ "image", "Image" ], [ "author", "Author" ] ],
+    "type" : "choice",
+    "default" : "text"
+  }, {
+    "id" : "18ab6838-ceab-6177-5cbd-0c111e88ebb8",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "button",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "8a99235f-aece-2428-8a05-d4660ff565ee",
+      "name" : "add_space_top",
+      "label" : "Add 50px of spacing above text",
+      "required" : false,
+      "locked" : false,
+      "type" : "boolean",
+      "display":"checkbox",
+      "default" : false
+    }, {
+      "id" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+      "name" : "use_cta_button",
+      "display_width" : null,
+      "label" : "Use CTA button",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "20f97ad6-64bf-cc3e-2428-c59184efd719",
+      "name" : "cta_button",
+      "display_width" : null,
+      "label" : "CTA Button",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "cta"
+    }, {
+      "id" : "0c8878eb-b5c3-76f3-695b-a9cc10c0f1e2",
+      "name" : "cta_color1",
+      "display_width" : null,
+      "label" : "Button colour",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "ba8df038-be0f-9680-45fa-f89ac56e40f6",
+      "name" : "cta_colortext1",
+      "display_width" : null,
+      "label" : "Button text colour",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "e3c60266-e79b-276e-115a-7945043f1b67",
+      "name" : "cta_text1",
+      "display_width" : null,
+      "label" : "Button text",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "richtext",
+      "default" : "Get your guide"
+    }, {
+      "id" : "b92fd91d-2eab-9b42-ac6e-3c1b5fe2e785",
+      "name" : "content_url",
+      "display_width" : null,
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "8a87235f-aece-2428-8a05-d4660ff565ee",
+        "controlling_value_regex" : "false",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "https://www.semine.com/"
+    }, {
+      "id" : "d529986d-05cd-1796-b7a9-a2d4311d4232",
+      "name" : "align",
+      "display_width" : null,
+      "label" : "Align",
+      "required" : false,
+      "locked" : false,
+      "display" : "radio",
+      "choices" : [ [ "left", "Left" ], [ "center", "Center" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "add_space_top" : false,
+      "use_cta_button" : false,
+      "cta_color1" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "cta_text1" : "Get your guide",
+      "content_url" : "https://www.semine.com/",
+      "align" : "left"
+    }
+  }, {
+    "id" : "0117366c-7909-0bb3-b0dc-c199e0364172",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "text",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "name" : "add_space_top",
+      "label" : "Add 50px of spacing above text",
+      "required" : false,
+      "locked" : false,
+      "type" : "boolean",
+      "display":"checkbox",
+      "default" : false
+    }, {
+      "id" : "34388e77-9a99-54cd-3b54-d2bf195cc44f",
+      "name" : "richtext_field",
+      "display_width" : null,
+      "label" : "Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>Hi {{ contact.firstname }}</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href=\"https://www.resourcify.com/en\" target=\"_blank\">ut labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<ul>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</li>\n</ul>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "add_space_top" : false,
+      "richtext_field" : "<h2>Hi {{ contact.firstname }}</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href=\"https://www.resourcify.com/en\" target=\"_blank\">ut labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<ul>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</li>\n</ul>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</p>"
+    }
+  }, {
+    "id" : "7c9686b4-f8c8-322d-169f-5287eecd59cc",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "60198bf2-65c3-26f7-3e14-e76ab32748a0",
+      "name" : "image",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://www.resourcify.com/hubfs/tp_template_pack/image-placeholder.jpg",
+        "alt" : "image-placeholder",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 397
+      }
+    }, {
+      "name" : "url",
+      "label" : "URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "content_id" : null,
+        "href" : "https://www.semine.com/",
+        "type" : "EXTERNAL"
+      }
+    }],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "image" : {
+        "src" : "https://4468513.fs1.hubspotusercontent-na1.net/hubfs/4468513/author-placeholder.png",
+        "alt" : "author-placeholder",
+        "loading" : "lazy",
+        "width" : 168,
+        "height" : 168
+      },
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.semine.com/",
+        "type" : "EXTERNAL"
+      }
+    }
+  }, {
+    "id" : "7c9686b1-f8c8-322d-169f-5287eecd59cc",
+    "name" : "author",
+    "display_width" : null,
+    "label" : "Author",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "00581ae6-107e-c812-a295-dfb46121b074",
+      "controlling_value_regex" : "author",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "1a7c3461-b0f5-74a7-ca3d-4e82d8829f18",
+      "name" : "bg_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "grey", "Grey" ],[ "light", "Light" ] ],
+      "type" : "choice",
+      "default" : "grey"
+    }, {
+      "id" : "e74c41b4-e2ab-246c-ed9f-58ffa9eb4872",
+      "name" : "tag_text",
+      "display_width" : null,
+      "label" : "Tag Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Author"
+    }, {
+      "id" : "author.tag_color",
+      "name" : "tag_color",
+      "label" : "Tag background color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+         "color" : "#FFE775",
+         "opacity" : 100
+      }
+    }, {
+      "id" : "cbd7abe4-4b93-46ed-e0b5-656eda5ec251",
+      "name" : "image",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/author_placeholder.png",
+        "alt" : "author_placeholder",
+        "width" : 114,
+        "height" : 114
+      }
+    }, {
+      "id" : "e4852798-76d5-4eb6-3834-5194d1e98acc",
+      "name" : "name_text",
+      "display_width" : null,
+      "label" : "Name",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Lorem ipsum"
+    }, {
+      "id" : "e4852498-76d5-4eb6-3834-5194d1e98acc",
+      "name" : "copy",
+      "display_width" : null,
+      "label" : "Copy",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Lorem ipsum dolor sit amet"
+    }, {
+      "id" : "6610f525-ec41-b7f7-8427-a7df13757adc",
+      "name" : "linkedin_url",
+      "display_width" : null,
+      "label" : "Linkedin URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.linkedin.com/company/semine",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "type" : "group",
+    "default" : {
+      "bg_color" : "grey",
+      "tag_text" : "Author",
+      "image" : {
+        "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/author_placeholder.png",
+        "alt" : "author_placeholder",
+        "width" : 114,
+        "height" : 114
+      },
+      "name_text" : "Lorem ipsum",
+      "copy" : "Lorem ipsum dolor sit amet",
+      "linkedin_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.linkedin.com/company/semine",
+        "content_id" : null
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group",
+  "default" : [ {
+    "module_type" : "text",
+    "button" : {
+      "add_space_top" : false,
+      "use_cta_button" : false,
+      "cta_color1" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "cta_text1" : "Get your guide",
+      "content_url" : "https://www.semine.com/",
+      "align" : "left"
+    },
+    "text" : {
+      "add_space_top" : false,
+      "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>\n</ul>"
+    },
+    "image" : {
+      "image" : {
+        "src" : "https://www.resourcify.com/hubfs/tp_template_pack/image-placeholder.jpg",
+        "alt" : "image-placeholder",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 397
+      },
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.semine.com/",
+        "type" : "EXTERNAL"
+      }
+    },
+    "author" : {
+      "bg_color" : "grey",
+      "tag_text" : "Author",
+      "image" : {
+        "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/author_placeholder.png",
+        "alt" : "author_placeholder",
+        "width" : 114,
+        "height" : 114
+      },
+      "name_text" : "Lorem ipsum",
+      "copy" : "Lorem ipsum dolor sit amet",
+      "linkedin_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.linkedin.com/company/semine",
+        "content_id" : null
+      }
+    }
+  }, {
+    "module_type" : "button",
+    "button" : {
+      "add_space_top" : false,
+      "use_cta_button" : false,
+      "cta_color1" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "cta_text1" : "Get your guide",
+      "content_url" : "https://www.semine.com/",
+      "align" : "left"
+    },
+    "text" : {
+      "add_space_top" : false,
+      "richtext_field" : "<h2>Hi {{ contact.firstname }}</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href=\"https://www.resourcify.com/en\" target=\"_blank\">ut labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<ul>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</li>\n</ul>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</p>"
+    },
+    "image" : {
+      "image" : {
+        "src" : "https://www.resourcify.com/hubfs/tp_template_pack/image-placeholder.jpg",
+        "alt" : "image-placeholder",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 397
+      },
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.semine.com/",
+        "type" : "EXTERNAL"
+      }
+    },
+    "author" : {
+      "bg_color" : "grey",
+      "tag_text" : "Author",
+      "image" : {
+        "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/author_placeholder.png",
+        "alt" : "author_placeholder",
+        "width" : 114,
+        "height" : 114
+      },
+      "name_text" : "Lorem ipsum",
+      "copy" : "Lorem ipsum dolor sit amet",
+      "linkedin_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.linkedin.com/company/semine",
+        "content_id" : null
+      }
+    }
+  }, {
+    "module_type" : "author",
+    "button" : {
+      "add_space_top" : false,
+      "use_cta_button" : false,
+      "cta_color1" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "cta_colortext1" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "cta_text1" : "Get your guide",
+      "content_url" : "https://www.semine.com/",
+      "align" : "left"
+    },
+    "text" : {
+      "add_space_top" : false,
+      "richtext_field" : "<h2>Hi {{ contact.firstname }}</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <a href=\"https://www.resourcify.com/en\" target=\"_blank\">ut labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<ul>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</li>\n</ul>\n<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  id est laborum.</p>"
+    },
+    "image" : {
+      "image" : {
+        "src" : "https://www.resourcify.com/hubfs/tp_template_pack/image-placeholder.jpg",
+        "alt" : "image-placeholder",
+        "loading" : "lazy",
+        "width" : 600,
+        "height" : 397
+      },
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.semine.com/",
+        "type" : "EXTERNAL"
+      }
+    },
+    "author" : {
+      "bg_color" : "grey",
+      "tag_text" : "Author",
+      "tag_color" : {
+        "color" : "#FFE775",
+        "opacity" : 100
+      },
+      "image" : {
+        "src" : "https://info.semine.com/hubfs/Semine_Template_Pack_2023/Email/author_placeholder.png",
+        "alt" : "author_placeholder",
+        "width" : 114,
+        "height" : 114
+      },
+      "name_text" : "Lorem ipsum",
+      "copy" : "Lorem ipsum dolor sit amet",
+      "linkedin_url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.linkedin.com/company/semine",
+        "content_id" : null
+      }
+    }
+  } ]
+} ]

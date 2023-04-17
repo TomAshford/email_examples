@@ -1,0 +1,80 @@
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:100%; table-layout:fixed; background-color: {{ module.bg_color.color }};" bgcolor="{{ module.bg_color.color }}">
+          <tr>
+            <td valign="top" align="center" style="padding: 0px 45px;"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td height="50" style="height: 50px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="center"><table width="188" align="center" border="0" cellspacing="0" cellpadding="0" style="width: 188px;" class="em_wrapper">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center" style="color:#202436;font-family:'Work Sans', Arial,sans-serif;font-weight:400;font-size:16px;line-height:22px;">{{ module.header }}</td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  <tr>
+                    <td height="22" style="height: 22px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="center"><table align="center" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td width="32" align="center" valign="middle"><a href="{{ module.linkedin_url.href }}" style="text-decoration:none;" target="_blank"><img src="https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/linkedin-email.png" width="32" alt="Follow us on LinkedIn" border="0" style="width:32px;font-family:Arial,sans-serif;font-size:12px;line-height:16px; font-weight: 400; color:#2c3645;max-width:32px;display:block;" /></a></td>
+                            <td width="20" style="width: 20px; line-height: 0px; font-size: 0px;"></td>
+                            <td width="32" align="center" valign="middle"><a href="{{ module.twitter_url.href }}" style="text-decoration:none;" target="_blank"><img src="https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/twitter-email.png" width="32" alt="Follow us on Twitter" border="0" style="width:32px;font-family:Arial,sans-serif;font-size:12px;line-height:16px; font-weight: 400; color:#2c3645;max-width:32px;display:block;" /></a></td>
+                            <td width="20" style="width: 20px; line-height: 0px; font-size: 0px;"></td>
+                            <td width="32" align="center" valign="middle"><a href="{{ module.youtube_url.href }}" style="text-decoration:none;" target="_blank"><img src="https://26100044.fs1.hubspotusercontent-eu1.net/hubfs/26100044/marketing_templates/emails/youtube-email.png" width="32" alt="Follow us on Twitter" border="0" style="width:32px;font-family:Arial,sans-serif;font-size:12px;line-height:16px; font-weight: 400; color:#2c3645;max-width:32px;display:block;" /></a></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  <tr>
+                    <td height="24" style="height: 24px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="center" style="font-family: 'Work Sans', Arial, sans-serif; font-size: 12px; line-height: 15px; color: #2c3645;" class="em_defaultlink">
+                      {% if content.language == "en" %}
+                      {{ module.en_footer }}
+                      <br><br>
+                      <span style="color:#202436;">5th Floor, 4 Snow Hill, London, EC1A 2DJ, United Kingdom</span><br><br>
+                      {% elif language == "no" %}
+                      {{ module.no_footer }}
+                      <br><br>
+                      <span style="color:#202436;">Solheimsgaten 7C, 5058 Bergen, Norway</span><br><br>
+                      {% elif language == "sv" %}
+                      {{ module.sv_footer }}
+                      <br><br>
+                      <span style="color:#202436;">Medborgarplatsen 3, 118 26 Stockholm, Sweden</span><br><br>
+                      {% elif language == "nl" %}
+                      {{ module.nl_footer }}
+                      <br><br>
+                      <span style="color:#202436;">Keizersgracht 391-A, 1016 EJ Amsterdam, Netherlands</span><br><br>
+                      {% else %}
+                      {{ module.en_footer }}
+                      <br><br>
+                      <span style="color:#202436;">{{ site_settings.company_street_address_1 }}, {{ site_settings.company_state }} {{ site_settings.company_city }}, {{ site_settings.company_country }}</span><br><br>
+                      {% endif %}
+                      <!-- View as webpage link -->
+                      {% if content.create_page %}
+                      <div style="color:#202436;">
+                        Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" style="color:#202436;" data-viewaswebpage="true" href="{{ view_as_page_url }}">here</a>.
+                      </div>
+                      {% endif %}
+                      <div style="display:none;opacity:0;font-size:0;mso-hide:all;">{{ site_settings.company_street_address_1 }}, {{ site_settings.company_state }} {{ site_settings.company_city }}, {{ site_settings.company_country }}, {{ site_settings.company_zip }}</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="45" style="height: 45px; font-size: 0px; line-height: 0px;" class="em_h32">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+        </table></td>
+    </tr>
+  </tbody>
+</table>

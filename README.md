@@ -1,1 +1,1 @@
-# ticketco-template-pack
+# email-examples
